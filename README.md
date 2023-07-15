@@ -16,8 +16,9 @@ del nuevo dato a los datos ya conocidos.
 
 El modelo servirá para clasificar una serie de pacientes en:
 
-‘sano’, en cuyo caso el valor de la etiqueta será 0.
-‘enfermo con COVID’, en cuyo caso la etiqueta será 1. 
+- Sano (en cuyo caso el valor de la etiqueta será 0)
+- Enfermo (en cuyo caso la etiqueta será 1)
+
 
 En la siguiente imagen se muestra un ejemplo de K-NN.
 
