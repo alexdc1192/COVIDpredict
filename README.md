@@ -1,5 +1,54 @@
 # COVIDpredict
 
+## Project Description:
+
+This project involves programming a simple Machine Learning model using only the following:
+
+- Numpy library
+- Math library
+- Any built-in functions and classes
+
+External tools such as Scikit-learn and Pandas are not allowed.
+
+The model to be implemented is a K-NN (K Nearest Neighbours), which involves labeling or predicting new data based on its distance to the known data.
+
+The model will be used to classify a group of patients into:
+
+- Healthy (label value 0)
+- Sick (label value 1)
+
+The provided image demonstrates an example of K-NN.
+
+![image](https://github.com/alexdc1192/COVIDpredict/assets/118775369/60ffacd2-123d-4372-b4dc-155e45f17921)
+
+## Data Description:
+
+The dataset contains two files that are read and stored in variables with the provided code. Both variables are arrays described below:
+
+- Symptoms: an array with 2000 rows and 2 columns. Each row represents a patient, and each column represents a characteristic of that patient, specifically the body temperature in degrees Celsius and the blood oxygen concentration as a percentage.
+- Labels: a one-dimensional array with 2000 values. Each value represents one of the 2000 patients. A value of 0 indicates a healthy patient, while a value of 1 indicates a patient with COVID.
+![image](https://github.com/alexdc1192/COVIDpredict/assets/118775369/b4373866-275b-4769-acc4-3c0000b81e5c)
+
+## Functionalities:
+
+The program must have the following functionalities:
+
+1. Data Splitting: The data needs to be divided into training and test sets to evaluate the model's performance. An 80-20 split will be performed, with 80% of the samples used for training and the remaining 20% for testing.
+
+2. Data Standardization: Since the similarity between data is measured by distances, it is necessary to standardize all variables to have a mean of 0 and a standard deviation of 1.
+
+3. Modeling: This part involves programming the data modeling to classify patients. The distances (similarities) between the new patient (from the test set) and the known healthy or sick patients (from the training set) will be calculated. The prediction will be based on the label of the nearest patient.
+
+4. Model Performance Calculation: After obtaining the model, its effectiveness in classifying patients needs to be evaluated. The percentage of correct predictions made by the model will be calculated.
+
+
+
+
+
+# COVIDpredict
+
+## Descripción del proyecto 
+
 Este proyecto consiste en programar un modelo sencillo de Machine Learning, usando unicamente:
 
 - Librería Numpy
@@ -21,7 +70,6 @@ El modelo servirá para clasificar una serie de pacientes en:
 
 
 En la siguiente imagen se muestra un ejemplo de K-NN.
-
 ![image](https://github.com/alexdc1192/COVIDpredict/assets/118775369/60ffacd2-123d-4372-b4dc-155e45f17921)
 
 En la imagen de la izquierda vemos como tenemos unos datos cuyas etiquetas son
@@ -54,7 +102,6 @@ En la siguiente imagen se observan las características de cada paciente - en el
 Y la concentración de oxígeno en sangre y en el eje X la temperatura corporal -, así
 como si está sano o enfermo - azul indica que el paciente está sano y naranja que
 está enfermo.
-
 ![image](https://github.com/alexdc1192/COVIDpredict/assets/118775369/b4373866-275b-4769-acc4-3c0000b81e5c)
 
 
